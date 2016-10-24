@@ -29,9 +29,8 @@ $count=mysqli_num_rows($result);
 if($count==1){
 
 // Register $myusername, $mypassword and redirect to file "soc_index.html"
-session_register("soc_un");
-session_register("soc_pw"); 
-header("location:soc_index.html");
+  $_SESSION['login'] = true;
+  header("location:soc_index.html");
 }
 else {
 echo "Wrong Username or Password. Please Check and Try again.";
