@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en" xml:lang="en">
+
+<head>
+  <title>LMS - Green University of Sri Lanka</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+  <link rel="stylesheet" type="text/css" href="css/imgeff.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        
+      </div>
+     
+    </div>
+    <div id="content_header"></div>
+    <div id="site_content">
+    
+    
+      <div class="sidebar">
+      
+      
+        <!-- sidebar -->
+       
+        
+         
+       
+        <h3><strong>Common Objects</strong></h3>
+        <ul>
+          <li><a href="#">Green Research/Pubs</a></li>
+          <li><a href="#">Green Quarterly News</a></li>
+          <li><a href="#">Student Handbooks</a></li>
+          <li><a href="#">Regulations</a></li>
+          <li><a href="#">Exam Timetables</a></li>
+          <li><a href="#">Lecture hours</a></li>
+          <li><a href="#">e-Library Catalog</a></li>
+          <li><a href="#">Academic Councilling & Pastoral Care</a></li>
+        </ul>
+       
+      </div>
+      
+      <table><td height="1px"><font size="1">YOUR ARE HERE : <a href="index.html">INDEX </a> >> RESET USERNAME & PASSWORD</td></table>
+      
+      <div id="content">
+        <!-- page content here -->
+        <font color="blue" size="+3">Reset Username & Password</font>
+        <p>Please enter your registered E-mail address in orser to reset your Username & Password. We will send your Username with a new password within 4 hours. Please check your E-mail inbox. </p>
+
+
+ <!-- school gateways -->
+<script type="text/javascript">
+ function val() {
+   
+  var em=document.getElementById('reset_user').value
+
+  var atpos=em.indexOf("@");              
+  var dotpos=em.lastIndexOf(".");
+
+        if (em=="" ) 
+        {document.getElementById('eem1').style.display="block";
+        return false;
+        }else
+        {
+          document.getElementById('eem1').style.display="none";
+        }
+
+        if (atpos<2 || dotpos<atpos)               
+        {
+        document.getElementById('eem2').style.display="block";
+        return false;
+        }else
+        {
+          document.getElementById('eem2').style.display="none";
+        }
+ 
+return true;
+}
+</script>
+<form action="#" method="post">
+          <div class="form_settings">
+          <table bgcolor="f6f6f0" bordercolor="f6f6f0"><tr><td>
+            <p><span><strong>E-mail Address :</strong></span>
+            <input class="reset" type="text" name="reset_user" value="" id="reset_user" /></p></td></tr><tr><td style="text-align: right;"><p id="eem1" style="display: none;">Enter Your email address</p><p style="display: none;" id="eem2">Enter a valid email address</p></td></tr></table>
+           
+            
+            <p style="padding-top: 15px"><span>&nbsp;</span><input class="submit" type="submit" name="Reset" value="Reset" onclick="return val()" ="" /></p>
+        </div>
+        </form>
+        <br>
+        <!--- Create account n forgot pw--->
+        
+        <table bgcolor="white">
+        <tr bgcolor="gray">
+        <td>
+         <div id="new_user">
+        <a href="new_user.html">Create new Account </a>
+        </div></td>
+       
+        </tr>
+        </table>
+        
+        <br><br>
+
+        <!-- standard time -->
+        
+           <p id="c_time"></p>
+        <script>
+document.getElementById("c_time").innerHTML = Date();
+</script>
+      
+      </div>
+    </div>
+    
+     <!-- footer -->
+    <div id="content_footer"></div>
+    <div id="footer">
+      Copyright &copy; 2016, Green University of Sri Lanka | <a href="http://validator.w3.org/check?uri=referer">HTML5</a> | <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS</a> | <a href="http://www.greenuniversity.drawingsky.lk">greenuniversity.lk</a>
+    </div>
+  </div>
+</body>
+</html>
